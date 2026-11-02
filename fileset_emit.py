@@ -701,6 +701,7 @@ def emit_images(raw, native_data, payload, roots, stub_symbol=None, early_securi
     emit = SegmentedEmit(cache, native, pairs, closure)
     emit.site_pairs = reviewed_sites(inputs, native, collection_slide)
     emit.stub, emit.stubbed = None, defaultdict(Counter)
+    emit.stub_sites = {}
     emit.old_starts = set(emit.old.function_starts())
     if stub_symbol:
         found = [address for address, names in native.symbols().items() if stub_symbol in names]
@@ -726,6 +727,9 @@ def emit_images(raw, native_data, payload, roots, stub_symbol=None, early_securi
                     for owner, targets in sorted(emit.missing.items())},
         'stubbed': {owner: {hex(target): count for target, count in sorted(targets.items())}
                     for owner, targets in sorted(emit.stubbed.items())},
+        # Call site -> the kernel function it asked for. A stub reports the call site it was reached
+        # from, never the target, so this is the only way back from a device panic.
+        'stub_sites': {hex(site): hex(target) for site, target in sorted(emit.stub_sites.items())},
         'stub_symbol': stub_symbol,
         'personalities_dropped': dropped_personalities,
         'early_security_init': {k: hex(v) for k, v in (early_security_init or {}).items()},

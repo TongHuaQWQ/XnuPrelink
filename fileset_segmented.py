@@ -25,6 +25,10 @@ class SegmentedEmit(Emit):
         if native is None and self.stub is not None and target in self.old_starts:
             # A kernel function this kernel does not have: the stub reports the call site.
             self.stubbed[self.owner(site)][target] += 1
+            # The target is what the caller wanted; the site is where it asked. A device panic can
+            # only print the site, so record the pair: with it, a panic address resolves to the one
+            # kernel function the collection could not name.
+            self.__dict__.setdefault('stub_sites', {})[site] = target
             native = self.stub
         if native is None:
             self.missing[self.owner(site)][target] += 1
