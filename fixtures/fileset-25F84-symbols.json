@@ -262,6 +262,132 @@
       "original_sha256": "6b78397ece22ded0e00e6b6ab67b6d12a3091e0992cf8ac4db2fcad1769a24aa",
       "native_symbol": "__ZN10IOWorkLoop19signalWorkAvailableEv",
       "evidence": "9 native addresses compete between __ZN10IOWorkLoop10wakeupGateEPvb and __ZN10IOWorkLoop17removeEventSourceEP13IOEventSource, so position does not decide; behaviour does: the original and __ZN10IOWorkLoop19signalWorkAvailableEv share 3.0 symbolic features (_hw_lock_unlock, _ml_set_interrupts_enabled_with_debug, _thread_wakeup_thread) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000ba51c78",
+      "original_size": 192,
+      "original_sha256": "5eee5c8896d624aad1cec1a9326c78e680c01797258c68cb156c3efde6be7c8f",
+      "native_symbol": "_vfs_setflags",
+      "evidence": "Sequence alignment: 2 unpaired originals, 2 native candidates and 2 definitions in the same source range between _vfs_flags and _vfs_iswriteupgrade. Ordering all three gives _vfs_setflags at position 1 (bsd/vfs/kpi_vfs.c:472)."
+    },
+    {
+      "original": "0xfffffe000bfe8c4c",
+      "original_size": 568,
+      "original_sha256": "15e8679a38007ad4a55c8b063ee9f957ce5d6592fd8d8c63815935b51b965ef1",
+      "native_symbol": "__ZN18IOMemoryDescriptor16performOperationEjyy",
+      "evidence": "3 native addresses compete between __ZN18IOMemoryDescriptor8dmaUnmapEP8IOMapperP12IODMACommandyyy and __ZN18IOMemoryDescriptor12setPurgeableEjPj, so position does not decide; behaviour does: the original and __ZN18IOMemoryDescriptor16performOperationEjyy share 2.0 symbolic features (_IORecursiveLockLock) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bd420f0",
+      "original_size": 12,
+      "original_sha256": "cc69ebf76870babe7c411c6192484957e0d33c8ac31e8007653d279554829f16",
+      "native_symbol": "_csblob_get_size",
+      "evidence": "Sequence alignment: 4 unpaired originals, 4 native candidates and 4 definitions in the same source range between _cs_system_require_lv and _csblob_invalidate_flags. Ordering all three gives _csblob_get_size at position 2 (bsd/kern/kern_cs.c:461)."
+    },
+    {
+      "original": "0xfffffe000bd420fc",
+      "original_size": 12,
+      "original_sha256": "875ab0ba2d050f3b79837a6eb1fd33fbba22cfffcf10a560cbe17ea0ce5590fa",
+      "native_symbol": "_csblob_get_addr",
+      "evidence": "Sequence alignment: 4 unpaired originals, 4 native candidates and 4 definitions in the same source range between _cs_system_require_lv and _csblob_invalidate_flags. Ordering all three gives _csblob_get_addr at position 3 (bsd/kern/kern_cs.c:473)."
+    },
+    {
+      "original": "0xfffffe000bd420e4",
+      "original_size": 12,
+      "original_sha256": "dc8e9afd348a80d12cda8cb1dc37d30bf8b0bf7740d5400715a80970442261a7",
+      "native_symbol": "_csblob_get_base_offset",
+      "evidence": "Sequence alignment: 4 unpaired originals, 4 native candidates and 4 definitions in the same source range between _cs_system_require_lv and _csblob_invalidate_flags. Ordering all three gives _csblob_get_base_offset at position 1 (bsd/kern/kern_cs.c:449)."
+    },
+    {
+      "original": "0xfffffe000b9fcff0",
+      "original_size": 780,
+      "original_sha256": "f754654cca74ab030c4f240c17cf31509b8d2d4bd659ef32bc00ddc0033805e9",
+      "native_symbol": "_name_cache_lock",
+      "evidence": "4 native addresses compete between _vnode_putname_printable and _vnode_uncache_credentials, so position does not decide; behaviour does: the original and _name_cache_lock share 2.0 symbolic features (_IORWLockWrite) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000ba51d38",
+      "original_size": 192,
+      "original_sha256": "3a3afd308ed90d9b16111834b1b8af688699556b5869a2b023ae50f7a0864123",
+      "native_symbol": "_vfs_clearflags",
+      "evidence": "Sequence alignment: 2 unpaired originals, 2 native candidates and 2 definitions in the same source range between _vfs_flags and _vfs_iswriteupgrade. Ordering all three gives _vfs_clearflags at position 2 (bsd/vfs/kpi_vfs.c:483)."
+    },
+    {
+      "original": "0xfffffe000bd42c88",
+      "original_size": 168,
+      "original_sha256": "7e51d017cd7911659fef1f4c312f96755f8addc45aa71a372b16fb091d0aee13",
+      "native_symbol": "_csproc_mark_invalid_allowed",
+      "evidence": "3 native addresses compete between _csproc_get_platform_path and _csproc_check_invalid_allowed, so position does not decide; behaviour does: the original and _csproc_mark_invalid_allowed share 2.0 symbolic features (_proc_csflags_set) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bfdec58",
+      "original_size": 756,
+      "original_sha256": "4124b2cabbe8947a46e00cb27adf0efa38cf87d0af9fc33a06970bc472b21f5d",
+      "native_symbol": "__ZN12IODMACommand8completeEbb",
+      "evidence": "2 native addresses compete between __ZN12IODMACommand7walkAllEj and __ZN12IODMACommand7prepareEyybb, so position does not decide; behaviour does: the original and __ZN12IODMACommand8completeEbb share 2.0 symbolic features (__ZN12IODMACommand7walkAllEj) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bd41fc0",
+      "original_size": 16,
+      "original_sha256": "5b11269fd7d0a3a7bbe309cacb5f969eb79b445ca8dd703e47236d6d063e612b",
+      "native_symbol": "_cs_vm_supports_4k_translations",
+      "evidence": "Sequence alignment: 2 unpaired originals, 2 native candidates and 2 definitions in the same source range between _cs_process_global_enforcement and _cs_valid. Ordering all three gives _cs_vm_supports_4k_translations at position 2 (bsd/kern/kern_cs.c:375)."
+    },
+    {
+      "original": "0xfffffe000bd42108",
+      "original_size": 32,
+      "original_sha256": "498a79efa3e5e7887628fd0b1b656641bf4385e735eae2cf7631b7f20931481c",
+      "native_symbol": "_csblob_get_platform_binary",
+      "evidence": "Sequence alignment: 4 unpaired originals, 4 native candidates and 4 definitions in the same source range between _cs_system_require_lv and _csblob_invalidate_flags. Ordering all three gives _csblob_get_platform_binary at position 4 (bsd/kern/kern_cs.c:486)."
+    },
+    {
+      "original": "0xfffffe000bd42b78",
+      "original_size": 272,
+      "original_sha256": "fac398353820697b1ba68135816b33a892dc8500439e0ac10182dc6653752ca4",
+      "native_symbol": "_csproc_disable_enforcement",
+      "evidence": "3 native addresses compete between _csproc_get_platform_path and _csproc_check_invalid_allowed, so position does not decide; behaviour does: the original and _csproc_disable_enforcement share 2.0 symbolic features (_proc_csflags_clear) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bd43710",
+      "original_size": 292,
+      "original_sha256": "d3cff0ca08a5f941007e9c9cd4da3290d48bc549e65fe4a822227acce59d0a71",
+      "native_symbol": "_csfg_get_teamid",
+      "evidence": "Sequence alignment: 8 unpaired originals, 8 native candidates and 8 definitions in the same source range between _csfg_get_cdhash and _csfg_get_csblob. Ordering all three gives _csfg_get_teamid at position 7 (bsd/kern/kern_cs.c:1355)."
+    },
+    {
+      "original": "0xfffffe000bd2db44",
+      "original_size": 424,
+      "original_sha256": "197a13a1894ee3966bafe0144efc7a23c70edb8699fa03f4c000fe7d9b3fc674",
+      "native_symbol": "_ktriage_record",
+      "evidence": "2 native addresses compete between _delete_buffers and _ktriage_extract, so position does not decide; behaviour does: the original and _ktriage_record share 2.0 symbolic features (__enable_preemption_underflow) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bfd288c",
+      "original_size": 168,
+      "original_sha256": "7da623c66dca034c2f25965e99079ba44173385eb4d624e215e6c3e7fb60ceb1",
+      "native_symbol": "__ZN10IOWorkLoop18setMaximumLockTimeEyj",
+      "evidence": "2 native addresses compete between __ZL23IOWorkLoopActionToBlockP8OSObjectPvS1_S1_S1_ and __ZNK13IOEventSource8onThreadEv, so position does not decide; behaviour does: the original and __ZN10IOWorkLoop18setMaximumLockTimeEyj share 2.0 symbolic features (_IORecursiveLockLock) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bfd4e44",
+      "original_size": 144,
+      "original_sha256": "05ccffee14161654dee5a9dd082f3908b561b973b8789595b37f0d5066f080ed",
+      "native_symbol": "__ZN13IOCommandGate12commandSleepEPvj",
+      "evidence": "5 native addresses compete between __ZN13IOCommandGate13commandWakeupEPvb and __ZN13IOCommandGate4initEP8OSObjectPFiS1_PvS2_S2_S2_E, so position does not decide; behaviour does: the original and __ZN13IOCommandGate12commandSleepEPvj share 2.5 symbolic features (_panic) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bfd01dc",
+      "original_size": 332,
+      "original_sha256": "cc8ba98fcef3eecd244eb72ab23fc63be7a21e9ccf334b7e6ea89b52cedfaf00",
+      "native_symbol": "__ZN10IOWorkLoop9sleepGateEPvyj",
+      "evidence": "2 native addresses compete between _IOPolledFileFlush and __ZN10IOWorkLoop8lockTimeEv, so position does not decide; behaviour does: the original and __ZN10IOWorkLoop9sleepGateEPvyj share 2.0 symbolic features (__ZN10IOWorkLoop8lockTimeEv) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bfd085c",
+      "original_size": 168,
+      "original_sha256": "153fd154d4a5d71b0f2057eaf513c587dd72a7a0c828b1583038d447b52c55a6",
+      "native_symbol": "__ZN10IOWorkLoop9closeGateEv",
+      "evidence": "4 native addresses compete between __ZN10IOWorkLoop10wakeupGateEPvb and __ZN10IOWorkLoop19signalWorkAvailableEv, so position does not decide; behaviour does: the original and __ZN10IOWorkLoop9closeGateEv share 2.0 symbolic features (_IORecursiveLockLock) and no other candidate comes close."
     }
   ]
 }
