@@ -194,25 +194,11 @@
       "evidence": "2 native addresses compete between _proc_is_zombie and _proc_gettty, so position does not decide; behaviour does: the original and _proc_getexecutablevnode_noblock share 2.0 symbolic features (_vnode_getwithref_noblock) and no other candidate comes close."
     },
     {
-      "original": "0xfffffe000b7fb2d0",
-      "original_size": 12,
-      "original_sha256": "69780f93a2545b12bedced7cdd59e6362bc76457186848f337b32cfafc711571",
-      "native_symbol": "_lck_rw_gate_open",
-      "evidence": "10 native addresses compete between _lck_rw_gate_alloc_init and _gate_open, so position does not decide; behaviour does: the original and _lck_rw_gate_open share 2.0 symbolic features (_gate_open) and no other candidate comes close."
-    },
-    {
       "original": "0xfffffe000bd831a8",
       "original_size": 76,
       "original_sha256": "30663af19299fa4a5eab8ddd8cd3fc62438daf2527e855afc91e1af36197c8e3",
       "native_symbol": "_proc_getexecutablevnode",
       "evidence": "2 native addresses compete between _proc_is_zombie and _proc_gettty, so position does not decide; behaviour does: the original and _proc_getexecutablevnode share 2.0 symbolic features (_vnode_getwithref) and no other candidate comes close."
-    },
-    {
-      "original": "0xfffffe000b7fcac0",
-      "original_size": 12,
-      "original_sha256": "ab16f60986b1ad1e7f7672123e9680ac37777d3e1716b3a84fb0d4424e72a3b8",
-      "native_symbol": "_lck_mtx_gate_open",
-      "evidence": "19 native addresses compete between ___lck_rw_gate_wait_block_invoke and _lck_mtx_gate_wait, so position does not decide; behaviour does: the original and _lck_mtx_gate_open share 2.0 symbolic features (_gate_open) and no other candidate comes close."
     },
     {
       "original": "0xfffffe000bda4834",
@@ -234,20 +220,6 @@
       "original_sha256": "dc43e488226c2a1f8303175c7974f2301231e4a82846c6fbbfad11771d727035",
       "native_symbol": "_vfs_context_dataless_materialization_is_prevented",
       "evidence": "2 native addresses compete between _freespace_mb and _vfs_context_orig_dataless_materialization_is_prevented, so position does not decide; behaviour does: the original and _vfs_context_dataless_materialization_is_prevented share 2.0 symbolic features (_vfs_context_dataless_materialization_is_prevented_internal) and no other candidate comes close."
-    },
-    {
-      "original": "0xfffffe000b7fc444",
-      "original_size": 56,
-      "original_sha256": "f3ca401fe2951047ff6cea4b9171a33ce047891a6982dc8bf9a11af0341f1628",
-      "native_symbol": "_lck_mtx_gate_alloc_init",
-      "evidence": "19 native addresses compete between ___lck_rw_gate_wait_block_invoke and _lck_mtx_gate_wait, so position does not decide; behaviour does: the original and _lck_mtx_gate_alloc_init share 2.0 symbolic features (_kalloc_type_impl_internal) and no other candidate comes close."
-    },
-    {
-      "original": "0xfffffe000b7fcadc",
-      "original_size": 12,
-      "original_sha256": "2e0ef9f8c6a1011b3d13ec83d0e691a0a3723f570db65ac8999e92b1dc359595",
-      "native_symbol": "_lck_mtx_gate_steal",
-      "evidence": "19 native addresses compete between ___lck_rw_gate_wait_block_invoke and _lck_mtx_gate_wait, so position does not decide; behaviour does: the original and _lck_mtx_gate_steal share 2.0 symbolic features (_gate_steal) and no other candidate comes close."
     },
     {
       "original": "0xfffffe000bfff858",
