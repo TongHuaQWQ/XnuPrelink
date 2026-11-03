@@ -150,6 +150,118 @@
       "original_sha256": "4329bd65561b2bc0387c8ee76ed23e19343d01c6a1fddf04f1c65ac7e028b925",
       "native_symbol": "_spec_select",
       "evidence": "Link order: _spec_fsync and _spec_ioctl bracket this function in the text and exactly one native function, _spec_select, sits between the same two neighbours. Source order: bsd/miscfs/specfs/spec_vnops.c:860 lies between _spec_fsync:950 and _spec_ioctl:827."
+    },
+    {
+      "original": "0xfffffe000bfbea68",
+      "original_size": 1024,
+      "original_sha256": "3310fdf66b8c83e31ac105b17c927f7f0e91eb52b712852a45f9a8f8c38a78a8",
+      "native_symbol": "__ZN9IOService19registerPowerDriverEPS_P14IOPMPowerStatem",
+      "evidence": "4 native addresses compete between __ZN9IOService16removePowerChildEP17IOPowerConnection and __ZN9IOService24registerInterestedDriverEPS_, so position does not decide; behaviour does: the original and __ZN9IOService19registerPowerDriverEPS_P14IOPMPowerStatem share 6.0 symbolic features (__ZN9IOService15submitPMRequestEP11IOPMRequest, __ZN9IOService16acquirePMRequestEPS_jP11IOPMRequest, __ZNK11IOServicePM7pmTraceEjjmm) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000c034fac",
+      "original_size": 700,
+      "original_sha256": "c60a5f8449e0a4ac28b8ed51ed15c9dd0c64fb350c94b16a9383c908cb6c662c",
+      "native_symbol": "__ZN10IOReporter10addChannelEyPKc",
+      "evidence": "6 native addresses compete between __ZN10IOReporterC2Ev and __ZN10IOReporter18lockReporterConfigEv, so position does not decide; behaviour does: the original and __ZN10IOReporter10addChannelEyPKc share 3.0 symbolic features (__ZN8OSSymbol11withCStringEPKc, _hw_lock_unlock, _ml_set_interrupts_enabled_with_debug) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000c09c084",
+      "original_size": 664,
+      "original_sha256": "ca80cb60c345a449793ba4af21e1084560cf9a443c174ad5adf3f5807aa1f5e5",
+      "native_symbol": "_SecureDTLookupEntry",
+      "evidence": "6 native addresses compete between _SecureDTFindNodeWithPropertyEqualToValueHelper and _SecureDTInitEntryIterator, so position does not decide; behaviour does: the original and _SecureDTLookupEntry share 6.0 symbolic features (___stack_chk_fail, _panic, _strcmp) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000ba223ec",
+      "original_size": 192,
+      "original_sha256": "247b02bff86aa8ae0fa6ffbb81f6757758d7a61f7b1bce6d3202cbd888432320",
+      "native_symbol": "_vnode_isinuse",
+      "evidence": "Link order: _vnode_writecount and _vnode_usecount bracket this function; 2 native addresses compete in that range, and source order picks _vnode_isinuse alone. Source order: bsd/vfs/vfs_subr.c:6470 lies between _vnode_writecount:6463 and _vnode_usecount:6476."
+    },
+    {
+      "original": "0xfffffe000c09c31c",
+      "original_size": 412,
+      "original_sha256": "81abe50637db9839f380d020b071bed40bcb4495043441e9eb953bcfae253662",
+      "native_symbol": "_SecureDTGetPropertyInternal",
+      "evidence": "6 native addresses compete between _SecureDTFindNodeWithPropertyEqualToValueHelper and _SecureDTInitEntryIterator, so position does not decide; behaviour does: the original and _SecureDTGetPropertyInternal share 4.0 symbolic features (_panic, _strcmp) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bd831f4",
+      "original_size": 76,
+      "original_sha256": "241423afe42ed47d283a738c57c4a79e29f3771592bf195ba9f6d32c9cef87f4",
+      "native_symbol": "_proc_getexecutablevnode_noblock",
+      "evidence": "2 native addresses compete between _proc_is_zombie and _proc_gettty, so position does not decide; behaviour does: the original and _proc_getexecutablevnode_noblock share 2.0 symbolic features (_vnode_getwithref_noblock) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000b7fb2d0",
+      "original_size": 12,
+      "original_sha256": "69780f93a2545b12bedced7cdd59e6362bc76457186848f337b32cfafc711571",
+      "native_symbol": "_lck_rw_gate_open",
+      "evidence": "10 native addresses compete between _lck_rw_gate_alloc_init and _gate_open, so position does not decide; behaviour does: the original and _lck_rw_gate_open share 2.0 symbolic features (_gate_open) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bd831a8",
+      "original_size": 76,
+      "original_sha256": "30663af19299fa4a5eab8ddd8cd3fc62438daf2527e855afc91e1af36197c8e3",
+      "native_symbol": "_proc_getexecutablevnode",
+      "evidence": "2 native addresses compete between _proc_is_zombie and _proc_gettty, so position does not decide; behaviour does: the original and _proc_getexecutablevnode share 2.0 symbolic features (_vnode_getwithref) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000b7fcac0",
+      "original_size": 12,
+      "original_sha256": "ab16f60986b1ad1e7f7672123e9680ac37777d3e1716b3a84fb0d4424e72a3b8",
+      "native_symbol": "_lck_mtx_gate_open",
+      "evidence": "19 native addresses compete between ___lck_rw_gate_wait_block_invoke and _lck_mtx_gate_wait, so position does not decide; behaviour does: the original and _lck_mtx_gate_open share 2.0 symbolic features (_gate_open) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bda4834",
+      "original_size": 128,
+      "original_sha256": "6a60420abb167cd0490c14ac86d48fd70d4112284df11dde1489d7b4921c0078",
+      "native_symbol": "_kernel_sysctl",
+      "evidence": "Link order: _sysctl_handle_string and _sysctl_root bracket this function; 2 native addresses compete in that range, and source order picks _kernel_sysctl alone. Source order: bsd/kern/kern_newsysctl.c:142 lies between _sysctl_handle_string:1426 and _sysctl_root:140."
+    },
+    {
+      "original": "0xfffffe000b95eac4",
+      "original_size": 8,
+      "original_sha256": "224d4df0836ae187285a713f6eab38d506f106d5205135a58ab1548d5684fce9",
+      "native_symbol": "_cpu_idle_tickle",
+      "evidence": "Link order: _cpu_doshutdown and _cpu_broadcast_xcall_internal bracket this function; 4 native addresses compete in that range, and source order picks _cpu_idle_tickle alone. Source order: osfmk/arm/cpu_common.c:190 lies between _cpu_doshutdown:179 and _cpu_broadcast_xcall_internal:247."
+    },
+    {
+      "original": "0xfffffe000ba414f8",
+      "original_size": 8,
+      "original_sha256": "dc43e488226c2a1f8303175c7974f2301231e4a82846c6fbbfad11771d727035",
+      "native_symbol": "_vfs_context_dataless_materialization_is_prevented",
+      "evidence": "2 native addresses compete between _freespace_mb and _vfs_context_orig_dataless_materialization_is_prevented, so position does not decide; behaviour does: the original and _vfs_context_dataless_materialization_is_prevented share 2.0 symbolic features (_vfs_context_dataless_materialization_is_prevented_internal) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000b7fc444",
+      "original_size": 56,
+      "original_sha256": "f3ca401fe2951047ff6cea4b9171a33ce047891a6982dc8bf9a11af0341f1628",
+      "native_symbol": "_lck_mtx_gate_alloc_init",
+      "evidence": "19 native addresses compete between ___lck_rw_gate_wait_block_invoke and _lck_mtx_gate_wait, so position does not decide; behaviour does: the original and _lck_mtx_gate_alloc_init share 2.0 symbolic features (_kalloc_type_impl_internal) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000b7fcadc",
+      "original_size": 12,
+      "original_sha256": "2e0ef9f8c6a1011b3d13ec83d0e691a0a3723f570db65ac8999e92b1dc359595",
+      "native_symbol": "_lck_mtx_gate_steal",
+      "evidence": "19 native addresses compete between ___lck_rw_gate_wait_block_invoke and _lck_mtx_gate_wait, so position does not decide; behaviour does: the original and _lck_mtx_gate_steal share 2.0 symbolic features (_gate_steal) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bfff858",
+      "original_size": 20,
+      "original_sha256": "86e5c44ee77ab1bd3a465fd459f030b181ec747111336cbba5ca7166ab7376f8",
+      "native_symbol": "__ZN5IOCPU11setPropertyEPK8OSSymbolP8OSObject",
+      "evidence": "3 native addresses compete between __ZN5IOCPU13setPropertiesEP8OSObject and __ZNK5IOCPU12getMetaClassEv, so position does not decide; behaviour does: the original and __ZN5IOCPU11setPropertyEPK8OSSymbolP8OSObject share 2.0 symbolic features (__ZN15IORegistryEntry11setPropertyEPK8OSSymbolP8OSObject) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000bfd09d8",
+      "original_size": 176,
+      "original_sha256": "6b78397ece22ded0e00e6b6ab67b6d12a3091e0992cf8ac4db2fcad1769a24aa",
+      "native_symbol": "__ZN10IOWorkLoop19signalWorkAvailableEv",
+      "evidence": "9 native addresses compete between __ZN10IOWorkLoop10wakeupGateEPvb and __ZN10IOWorkLoop17removeEventSourceEP13IOEventSource, so position does not decide; behaviour does: the original and __ZN10IOWorkLoop19signalWorkAvailableEv share 3.0 symbolic features (_hw_lock_unlock, _ml_set_interrupts_enabled_with_debug, _thread_wakeup_thread) and no other candidate comes close."
     }
   ]
 }
