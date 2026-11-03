@@ -38,6 +38,118 @@
       "original_sha256": "0b2561307335247fbae1d3dcde8a031a9024089dab668f6694bf6419a9618d28",
       "native_symbol": "_IOFreeData",
       "evidence": "Fifth of the six 144-byte wrappers that follow _IOFreePageable (0xfffffe000bf71fc8 + 4 * 0x90) and the only one of them that frees: kfree_ext at +0x28 with the same IOStatistics and IORWLockUnlock tail as the alloc at the head of the block. That makes it the free counterpart of _IOMallocData, matching the native pair. Source: libkern/c++/IOLib.cpp."
+    },
+    {
+      "original": "0xfffffe000bd440f4",
+      "original_size": 152,
+      "original_sha256": "d0c3f7a55e82b36d79c587f78480029155b8c119c9cb5c1567effd47905f4e14",
+      "native_symbol": "_cs_identity_get",
+      "evidence": "Link order: _cs_entitlements_dictionary_copy and _cs_blob_get bracket this function in the text and exactly one native function, _cs_identity_get, sits between the same two neighbours. Source order: bsd/kern/kern_cs.c:1842 lies between _cs_entitlements_dictionary_copy:1813 and _cs_blob_get:1871."
+    },
+    {
+      "original": "0xfffffe000b9ffbfc",
+      "original_size": 172,
+      "original_sha256": "109d1ad96f0f115cf5a9596c369c75a2d1a44fc7ecdf4741034181576e664989",
+      "native_symbol": "_cache_purge",
+      "evidence": "Link order: _resize_namecache and _cache_purge_negatives bracket this function in the text and exactly one native function, _cache_purge, sits between the same two neighbours. Source order: bsd/vfs/vfs_cache.c:3240 lies between _resize_namecache:3075 and _cache_purge_negatives:3270."
+    },
+    {
+      "original": "0xfffffe000bd423d4",
+      "original_size": 148,
+      "original_sha256": "268c4bb5658a0f88a1d3d4b900271b40e671f025e09a86448f8652408a2b320f",
+      "native_symbol": "_csproc_get_blob",
+      "evidence": "Link order: _csblob_get_hashtype and _csvnode_get_blob bracket this function in the text and exactly one native function, _csproc_get_blob, sits between the same two neighbours. Source order: bsd/kern/kern_cs.c:579 lies between _csblob_get_hashtype:567 and _csvnode_get_blob:603."
+    },
+    {
+      "original": "0xfffffe000ba59dd0",
+      "original_size": 136,
+      "original_sha256": "4a619cd5bf9c76b7f604c26a9d158a390cdf79fb2771c38a8e644205b6850062",
+      "native_symbol": "_VNOP_GETXATTR",
+      "evidence": "Link order: _VNOP_CLONEFILE and _VNOP_SETXATTR bracket this function in the text and exactly one native function, _VNOP_GETXATTR, sits between the same two neighbours. Source order: bsd/vfs/kpi_vfs.c:5959 lies between _VNOP_CLONEFILE:5923 and _VNOP_SETXATTR:5979."
+    },
+    {
+      "original": "0xfffffe000bd427e4",
+      "original_size": 160,
+      "original_sha256": "ae824a5c4e62582e649bd644a713c72f67bfe8b821332383c21821fbff2536c2",
+      "native_symbol": "_csproc_get_teamid",
+      "evidence": "Link order: _csblob_get_storage_addr and _csproc_get_identity bracket this function in the text and exactly one native function, _csproc_get_teamid, sits between the same two neighbours. Source order: bsd/kern/kern_cs.c:796 lies between _csblob_get_storage_addr:782 and _csproc_get_identity:809."
+    },
+    {
+      "original": "0xfffffe000bdba4e8",
+      "original_size": 240,
+      "original_sha256": "216de4cea08cdda39582bad87ab3544e8bcfaea20ec46b58fd40f0316ba69e2c",
+      "native_symbol": "_code_signing_configuration",
+      "evidence": "Link order: _code_signing_deallocate and _disable_code_signing_feature bracket this function in the text and exactly one native function, _code_signing_configuration, sits between the same two neighbours. Source order: bsd/kern/kern_codesigning.c:118 lies between _code_signing_deallocate:85 and _disable_code_signing_feature:386."
+    },
+    {
+      "original": "0xfffffe000ba52970",
+      "original_size": 180,
+      "original_sha256": "493c54d2e5223ecbb66514b5d4591f1e8f7d5784506a95060349ad34e541a622",
+      "native_symbol": "_vfs_setfsprivate",
+      "evidence": "Link order: _vfs_fsprivate and _vfs_nativexattrs bracket this function in the text and exactly one native function, _vfs_setfsprivate, sits between the same two neighbours. Source order: bsd/vfs/kpi_vfs.c:797 lies between _vfs_fsprivate:790 and _vfs_nativexattrs:806."
+    },
+    {
+      "original": "0xfffffe000be32f00",
+      "original_size": 176,
+      "original_sha256": "d89f07624a29fff985b9f5d7d4f470d2cb6df654825445f524d49bad88324a25",
+      "native_symbol": "_os_reason_set_flags",
+      "evidence": "Link order: _os_reason_free and _os_reason_set_description_data bracket this function in the text and exactly one native function, _os_reason_set_flags, sits between the same two neighbours. Source order: bsd/kern/sys_reason.c:247 lies between _os_reason_free:222 and _os_reason_set_description_data:262."
+    },
+    {
+      "original": "0xfffffe000b9ffe94",
+      "original_size": 100,
+      "original_sha256": "eae23cfa8d529697d68067a7d5433ddf40900e905e94339a25435f067d35ecd4",
+      "native_symbol": "_cluster_max_io_size",
+      "evidence": "Link order: _cluster_init and _cluster_throttle_io_limit bracket this function in the text and exactly one native function, _cluster_max_io_size, sits between the same two neighbours. Source order: bsd/vfs/vfs_cluster.c:331 lies between _cluster_init:322 and _cluster_throttle_io_limit:1001."
+    },
+    {
+      "original": "0xfffffe000ba5623c",
+      "original_size": 44,
+      "original_sha256": "e5a8829a7ae608b69648dbbcf85162597512a008ee246ba6dfbcacc00784f8c9",
+      "native_symbol": "_vnode_getbackingvnode",
+      "evidence": "Link order: _vnode_ismonitored and _vfs_get_notify_attributes bracket this function in the text and exactly one native function, _vnode_getbackingvnode, sits between the same two neighbours. Source order: bsd/vfs/kpi_vfs.c:3287 lies between _vnode_ismonitored:3281 and _vfs_get_notify_attributes:3305."
+    },
+    {
+      "original": "0xfffffe000bd7df40",
+      "original_size": 196,
+      "original_sha256": "5cd7b67eec0348fe0ae151c412179ce97706028397d2f935d4175e0549b67c6e",
+      "native_symbol": "_persona_get_type",
+      "evidence": "Link order: _persona_proc_drop and _persona_get_uid bracket this function in the text and exactly one native function, _persona_get_type, sits between the same two neighbours. Source order: bsd/kern/kern_persona.c:827 lies between _persona_proc_drop:772 and _persona_get_uid:847."
+    },
+    {
+      "original": "0xfffffe000b7b0c48",
+      "original_size": 100,
+      "original_sha256": "4e516aa267483611d1cbe4c15b33e8815719b7add72cfad259253218167b30e4",
+      "native_symbol": "_kdp_register_callout",
+      "evidence": "Link order: _DebuggerWithContext and _register_additional_panic_data_buffer bracket this function in the text and exactly one native function, _kdp_register_callout, sits between the same two neighbours. Source order: osfmk/kern/debug.c:935 lies between _DebuggerWithContext:873 and _register_additional_panic_data_buffer:977."
+    },
+    {
+      "original": "0xfffffe000bd43da8",
+      "original_size": 120,
+      "original_sha256": "08026031621ff8bce882ca7ff6ac6069203ebf013e5590f48ed976b5ad34d62c",
+      "native_symbol": "_csproc_get_platform_identifier",
+      "evidence": "Link order: _csvnode_get_platform_identifier and _cs_entitlement_flags bracket this function in the text and exactly one native function, _csproc_get_platform_identifier, sits between the same two neighbours. Source order: bsd/kern/kern_cs.c:1670 lies between _csvnode_get_platform_identifier:1644 and _cs_entitlement_flags:1680."
+    },
+    {
+      "original": "0xfffffe000b7e6d9c",
+      "original_size": 172,
+      "original_sha256": "ea5d8ef06ab41625b87bca34d4567de13fde6afa4376849a3de9dac2f8c46969",
+      "native_symbol": "_convert_port_to_task_suspension_token_external",
+      "evidence": "Link order: _convert_port_to_task_policy_get_mig and _convert_port_to_task_suspension_token_mig bracket this function in the text and exactly one native function, _convert_port_to_task_suspension_token_external, sits between the same two neighbours. Source order: osfmk/kern/ipc_tt.c:2828 lies between _convert_port_to_task_policy_get_mig:2794 and _convert_port_to_task_suspension_token_mig:2835."
+    },
+    {
+      "original": "0xfffffe000ba67718",
+      "original_size": 92,
+      "original_sha256": "b8e41bdb2de8d044b1403d32366be60225fcbcbba5272ea55f75f41e65828f41",
+      "native_symbol": "_spec_pathconf",
+      "evidence": "Link order: _spec_blktooff and _spec_strategy bracket this function in the text and exactly one native function, _spec_pathconf, sits between the same two neighbours. Source order: bsd/miscfs/specfs/spec_vnops.c:2885 lies between _spec_blktooff:2923 and _spec_strategy:2497."
+    },
+    {
+      "original": "0xfffffe000ba6849c",
+      "original_size": 176,
+      "original_sha256": "4329bd65561b2bc0387c8ee76ed23e19343d01c6a1fddf04f1c65ac7e028b925",
+      "native_symbol": "_spec_select",
+      "evidence": "Link order: _spec_fsync and _spec_ioctl bracket this function in the text and exactly one native function, _spec_select, sits between the same two neighbours. Source order: bsd/miscfs/specfs/spec_vnops.c:860 lies between _spec_fsync:950 and _spec_ioctl:827."
     }
   ]
 }
