@@ -360,6 +360,69 @@
       "original_sha256": "153fd154d4a5d71b0f2057eaf513c587dd72a7a0c828b1583038d447b52c55a6",
       "native_symbol": "__ZN10IOWorkLoop9closeGateEv",
       "evidence": "4 native addresses compete between __ZN10IOWorkLoop10wakeupGateEPvb and __ZN10IOWorkLoop19signalWorkAvailableEv, so position does not decide; behaviour does: the original and __ZN10IOWorkLoop9closeGateEv share 2.0 symbolic features (_IORecursiveLockLock) and no other candidate comes close."
+    },
+    {
+      "original": "0xfffffe000b7fc444",
+      "original_size": 56,
+      "original_sha256": "f3ca401fe2951047ff6cea4b9171a33ce047891a6982dc8bf9a11af0341f1628",
+      "native_symbol": "_lck_mtx_gate_alloc_init",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000b9625f4",
+      "original_size": 8,
+      "original_sha256": "a7f36b663ceadf54df7a07cb026058b0198573c97e5134c3ca0b7692d2cc2e3c",
+      "native_symbol": "_IOSimpleLockLock",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000bd82a88",
+      "original_size": 32,
+      "original_sha256": "9ffd739bcd5f5facc7b27eaf77f1bb36e2392389fb250a4265692c71b07a6bd7",
+      "native_symbol": "_proc_task",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000b7fcac0",
+      "original_size": 12,
+      "original_sha256": "ab16f60986b1ad1e7f7672123e9680ac37777d3e1716b3a84fb0d4424e72a3b8",
+      "native_symbol": "_lck_mtx_gate_open",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000b7fcadc",
+      "original_size": 12,
+      "original_sha256": "2e0ef9f8c6a1011b3d13ec83d0e691a0a3723f570db65ac8999e92b1dc359595",
+      "native_symbol": "_lck_mtx_gate_handoff",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000b7fc7c4",
+      "original_size": 400,
+      "original_sha256": "8adf2dd0413e1210f9848ebb75ea1826daf02bcbcc82ea43d40c8ba06c0bb4fd",
+      "native_symbol": "_lck_mtx_gate_try_close",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000b7fc954",
+      "original_size": 364,
+      "original_sha256": "3a0da20827dd0449d89b0a6d73caa38a2d873475fe924dbc364758bbeb438155",
+      "native_symbol": "_lck_mtx_gate_close",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000b7f09a8",
+      "original_size": 52,
+      "original_sha256": "a7394a21f437ac232ba26ef5096cbd561e2cd45b01ab1747a6de2c62befa0363",
+      "native_symbol": "_lck_mtx_free",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
+    },
+    {
+      "original": "0xfffffe000bf72058",
+      "original_size": 144,
+      "original_sha256": "efa61872a08566a6a4af4a09fab77b9db776f2b14e841bb9f6bfb9a8c995c59a",
+      "native_symbol": "_IOMallocZeroData",
+      "evidence": "Identified in work/analysis/b11-image4-callmodel.md (tail-call target, mask-byte identity or __auth_got slot order); AppleImage4 calls it directly."
     }
   ]
 }
